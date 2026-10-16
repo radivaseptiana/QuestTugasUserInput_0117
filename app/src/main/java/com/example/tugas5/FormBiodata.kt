@@ -127,3 +127,10 @@ fun FormBiodata(modifier: Modifier = Modifier) {
                     onValueChange = { textNamaBelakang = it }
                 )
             }
+            OutlinedTextField(
+                value = textEmail,
+                singleLine = true,
+                modifier = Modifier.fillMaxWidth(),
+                label = { Text(text = stringResource(id = R.string.email)) },
+                onValueChange = { textEmail = it }
+            )
