@@ -213,3 +213,21 @@ fun FormBiodata(modifier: Modifier = Modifier) {
             ) {
                 Text(stringResource(R.string.proceed))
             }
+            if (tampil) {
+                ElevatedCard(
+                    colors = CardDefaults.cardColors(containerColor = colorResource(id = R.color.hitam)),
+                    modifier = Modifier.fillMaxWidth()
+                ) {
+                    Column(modifier = Modifier.padding(dimensionResource(id = R.dimen.padding_small))) {
+                        val putih = colorResource(id = R.color.putih)
+                        Text(text = stringResource(R.string.hasil_nama) + nama, color = putih)
+                        Text(text = stringResource(R.string.hasil_email) + email, color = putih)
+                        Text(text = stringResource(R.string.hasil_tgl) + tgl, color = putih)
+                        Text(text = stringResource(R.string.hasil_exp) + exp, color = putih)
+                        Text(text = stringResource(R.string.hasil_skill) + skill, color = putih)
+                    }
+                }
+            }
+        }
+    }
+
