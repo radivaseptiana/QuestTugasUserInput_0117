@@ -134,3 +134,21 @@ fun FormBiodata(modifier: Modifier = Modifier) {
                 label = { Text(text = stringResource(id = R.string.email)) },
                 onValueChange = { textEmail = it }
             )
+            Row(horizontalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_small))) {
+                //Tgl Lahir: tidak bisa diketik, dipilih lewat kalender
+                OutlinedTextField(
+                    value = textTgl,
+                    singleLine = true,
+                    readOnly = true,
+                    modifier = Modifier.weight(1f),
+                    label = { Text(text = stringResource(id = R.string.tgl_lahir)) },
+                    trailingIcon = {
+                        IconButton(onClick = { bukaKalender = true }) {
+                            Icon(
+                                painter = painterResource(id = R.drawable.ic_kalender),
+                                contentDescription = stringResource(id = R.string.cd_pilih_tanggal)
+                            )
+                        }
+                    },
+                    onValueChange = { }
+                )
