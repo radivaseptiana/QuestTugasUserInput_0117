@@ -55,3 +55,11 @@ fun FormBiodata(modifier: Modifier = Modifier) {
     var cekUiux by remember { mutableStateOf(value = false) }
     var cekWeb by remember { mutableStateOf(value = false) }
 
+    //Variable-variable untuk menyimpan data yang diperoleh dari komponen UI
+    var nama by remember { mutableStateOf(value = "") }
+    var email by remember { mutableStateOf(value = "") }
+    var tgl by remember { mutableStateOf(value = "") }
+    var exp by remember { mutableStateOf(value = "") }
+    var skill by remember { mutableStateOf(value = "") }
+    var tampil by remember { mutableStateOf(value = false) }
+
