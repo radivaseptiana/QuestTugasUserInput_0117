@@ -170,3 +170,19 @@ fun FormBiodata(modifier: Modifier = Modifier) {
                         },
                         onValueChange = { }
                     )
+                    DropdownMenu(
+                        expanded = bukaDropdown,
+                        onDismissRequest = { bukaDropdown = false }
+                    ) {
+                        listExp.forEach { item ->
+                            DropdownMenuItem(
+                                text = { Text(text = item) },
+                                onClick = {
+                                    textExp = item
+                                    bukaDropdown = false
+                                }
+                            )
+                        }
+                    }
+                }
+            }
