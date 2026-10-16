@@ -245,3 +245,13 @@ fun FormBiodata(modifier: Modifier = Modifier) {
                     Text(text = stringResource(id = R.string.ok))
                 }
             },
+            dismissButton = {
+                TextButton(onClick = { bukaKalender = false }) {
+                    Text(text = stringResource(id = R.string.batal))
+                }
+            }
+        ) {
+            DatePicker(state = kalenderState)
+        }
+    }
+}
