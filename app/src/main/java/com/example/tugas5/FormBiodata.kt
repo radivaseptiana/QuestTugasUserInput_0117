@@ -80,3 +80,11 @@ fun FormBiodata(modifier: Modifier = Modifier) {
     val teksWeb = stringResource(id = R.string.skill_web)
     val durasi = integerResource(id = R.integer.durasi_hasil).toLong()
 
+    //Card hasil disembunyikan lagi setelah 5 detik
+    LaunchedEffect(key1 = tampil) {
+        if (tampil) {
+            delay(timeMillis = durasi)
+            tampil = false
+        }
+    }
+
