@@ -186,3 +186,12 @@ fun FormBiodata(modifier: Modifier = Modifier) {
                     }
                 }
             }
+            Text(text = stringResource(id = R.string.pilih_skill))
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Checkbox(checked = cekAndroid, onCheckedChange = { cekAndroid = it })
+                Text(teksAndroid)
+                Checkbox(checked = cekUiux, onCheckedChange = { cekUiux = it })
+                Text(teksUiux)
+                Checkbox(checked = cekWeb, onCheckedChange = { cekWeb = it })
+                Text(teksWeb)
+            }
