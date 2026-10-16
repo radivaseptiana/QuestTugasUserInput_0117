@@ -88,3 +88,12 @@ fun FormBiodata(modifier: Modifier = Modifier) {
         }
     }
 
+    //Box putih yang mengapung di atas gambar dan Scaffold
+    Box(
+        modifier = modifier
+            .fillMaxWidth()
+            .background(
+                color = colorResource(id = R.color.putih),
+                shape = RoundedCornerShape(dimensionResource(id = R.dimen.radius_box))
+            )
+    ) {
