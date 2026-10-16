@@ -22,5 +22,9 @@
     <string name="cd_gambar">Gambar minion</string>
     <string name="cd_pilih_tanggal">Pilih tanggal</string>
     <string name="cd_buka_dropdown">Buka pilihan</string>
-
+    <string name="hasil_nama">Nama : </string>
+    <string name="hasil_email">Email : </string>
+    <string name="hasil_tgl">Tgl Lahir : </string>
+    <string name="hasil_exp">Experience : </string>
+    <string name="hasil_skill">Skill : </string>
 </resources>
