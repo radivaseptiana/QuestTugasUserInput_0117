@@ -195,3 +195,21 @@ fun FormBiodata(modifier: Modifier = Modifier) {
                 Checkbox(checked = cekWeb, onCheckedChange = { cekWeb = it })
                 Text(teksWeb)
             }
+            Button(
+                modifier = Modifier.fillMaxWidth(fraction = 1f),
+                // tombol aktif jika nama depan, nama belakang, dan email sudah diisi
+                enabled = textNamaDepan.isNotEmpty() && textNamaBelakang.isNotEmpty() && textEmail.isNotEmpty(),
+                onClick = {
+                    nama = textNamaDepan + " " + textNamaBelakang
+                    email = textEmail
+                    tgl = textTgl
+                    exp = textExp
+                    skill = ""
+                    if (cekAndroid) skill = skill + teksAndroid + " "
+                    if (cekUiux) skill = skill + teksUiux + " "
+                    if (cekWeb) skill = skill + teksWeb
+                    tampil = true
+                }
+            ) {
+                Text(stringResource(R.string.proceed))
+            }
