@@ -8,5 +8,10 @@
     <string name="tgl_lahir">Tgl Lahir</string>
     <string name="experience">Experience</string>
     <string name="exp_pertama">0 - 1 Tahun</string>
+    <string name="exp_kedua">1 - 3 Tahun</string>
+    <string name="exp_ketiga">3 - 5 Tahun</string>
+    <string name="exp_keempat">5+ Tahun</string>
+    <string name="pilih_skill">Pilih Skill Anda :</string>
+    <string name="skill_android">Android</string>
 
 </resources>
