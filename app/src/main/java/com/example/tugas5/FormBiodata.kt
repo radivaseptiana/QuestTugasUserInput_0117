@@ -75,3 +75,8 @@ fun FormBiodata(modifier: Modifier = Modifier) {
         stringResource(id = R.string.exp_keempat)
     )
 
+    val teksAndroid = stringResource(id = R.string.skill_android)
+    val teksUiux = stringResource(id = R.string.skill_uiux)
+    val teksWeb = stringResource(id = R.string.skill_web)
+    val durasi = integerResource(id = R.integer.durasi_hasil).toLong()
+
